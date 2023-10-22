@@ -3,13 +3,6 @@ from random import randint
 def computer_guess(low, high):
     num = randint(low, high)
     return num
-def computer_ia(random_number, cguess, low, high):
-    if cguess > random_number:
-        high = cguess - 1
-        return high
-    elif cguess < random_number:
-        low = cguess + 1
-        return low
 def batle_guess(x):
     random_number = randint(1, x)
     guess = 0
